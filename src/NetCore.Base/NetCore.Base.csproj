@@ -4,7 +4,7 @@
 		<TargetFramework>net8.0</TargetFramework>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageId>Zeferini.Dev.NetCore.Base</PackageId>
-		<Version>1.0.1</Version>
+		<Version>1.0.2</Version>
 		<Authors>Clodoaldo Zeferini</Authors>
 		<Company>Zeferini.Dev</Company>
 		<Description>Zeferini.Dev.NetCore.Base</Description>
