@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageId>Zeferini.Dev.NetCore.Base</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>Clodoaldo Zeferini</Authors>
+		<Company>Zeferini.Dev</Company>
+		<Description>Zeferini.Dev.NetCore.Base</Description>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/zeferini-dev/Zeferini.Dev.NetCore.Base</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/zeferini-dev/Zeferini.Dev.NetCore.Base.git</RepositoryUrl>
+	</PropertyGroup>
+
+</Project>
