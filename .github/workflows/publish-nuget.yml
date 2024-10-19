@@ -19,13 +19,13 @@ jobs:
         dotnet-version: '8.0.x'
 
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet src/NetCore.Base restore
 
     - name: Build the project
-      run: dotnet build --configuration Release --no-restore
+      run: dotnet build  src/NetCore.Base  --configuration Release --no-restore
 
     - name: Pack the NuGet package
-      run: dotnet pack --configuration Release --no-build
+      run: dotnet pack  src/NetCore.Base --configuration Release --no-build
 
     - name: Push NuGet package to nuget.org
       run: dotnet nuget push **/bin/Release/*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
