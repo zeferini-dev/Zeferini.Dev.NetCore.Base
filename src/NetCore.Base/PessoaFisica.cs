@@ -1,4 +1,6 @@
-﻿namespace NetCore.Base
+﻿using System;
+
+namespace NetCore.Base
 {
     public abstract class PessoaFisica : Pessoa
     {

@@ -1,4 +1,7 @@
-﻿namespace NetCore.Base
+﻿using System;
+using System.Collections.Generic;
+
+namespace NetCore.Base
 {
     public class BaseException : ArgumentException
     {

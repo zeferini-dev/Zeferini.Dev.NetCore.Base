@@ -1,4 +1,6 @@
-﻿namespace NetCore.Base
+﻿using System.Collections.Generic;
+
+namespace NetCore.Base
 {
     public class RuleValidator
     {

@@ -1,4 +1,7 @@
-﻿namespace NetCore.Base.Model.Response
+﻿using System;
+using System.Collections.Generic;
+
+namespace NetCore.Base.Model.Response
 {
     public abstract class ResponseBase : IDisposable
     {

@@ -1,4 +1,5 @@
 ﻿using NetCore.Base.Enum;
+using System;
 
 namespace NetCore.Base
 {

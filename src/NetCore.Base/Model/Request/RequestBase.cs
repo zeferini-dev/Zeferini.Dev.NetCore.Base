@@ -1,4 +1,6 @@
-﻿namespace NetCore.Base.Model.Request
+﻿using System;
+
+namespace NetCore.Base.Model.Request
 {
     public abstract class RequestBase
     {        

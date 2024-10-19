@@ -1,4 +1,6 @@
-﻿namespace NetCore.Base.Model.Response
+﻿using System;
+
+namespace NetCore.Base.Model.Response
 {
     public class Message
     {

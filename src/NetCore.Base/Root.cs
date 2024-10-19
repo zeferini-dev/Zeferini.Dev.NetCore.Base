@@ -1,4 +1,5 @@
 ﻿using NetCore.Base.Enum;
+using System;
 using System.Xml.Linq;
 
 namespace NetCore.Base

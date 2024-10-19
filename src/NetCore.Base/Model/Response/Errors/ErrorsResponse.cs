@@ -1,4 +1,6 @@
-﻿namespace NetCore.Base.Model.Response.Errors
+﻿using System.Collections.Generic;
+
+namespace NetCore.Base.Model.Response.Errors
 {
     public class ErrorsResponse
     {
