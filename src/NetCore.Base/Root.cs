@@ -26,9 +26,11 @@ namespace NetCore.Base
 
         public void SetName(string name, string updatedBy)
         {
-            Name = (ValidateString(name, null, null) ? name.Replace("  ", " ") : "");
+            Name = name;
             UpdatedBy = updatedBy;
             UpdatedOn = DateTime.Now;
+
+            ValidateRootBase();
         }
 
         /// <summary>
@@ -41,7 +43,7 @@ namespace NetCore.Base
             Status = EStatus.ATIVO;
             InsertedOn = DateTime.Now;
             InsertedBy = insertedBy;
-            Name = (ValidateString(name, null, null) ? name.Replace("  ", " ") : "");
+            Name = name;
 
             ValidateRootInsert();
         }
@@ -57,7 +59,7 @@ namespace NetCore.Base
         protected Root(string name, EStatus status, DateTime insertedOn, string insertedBy, string updatedBy)
         {
 
-            Name = (ValidateString(name, null, null) ? name.Replace("  ", " ") : "");
+            Name = name;
             Status = status;
             InsertedOn = insertedOn;
             UpdatedOn = DateTime.Now;
@@ -78,12 +80,14 @@ namespace NetCore.Base
         /// <param name="updatedBy"></param>
         protected Root(string name, EStatus status, DateTime insertedOn, string insertedBy, DateTime? updatedOn, string? updatedBy)
         {
-            Name = (ValidateString(name, null, null) ? name.Replace("  ", " ") : "");
+            Name = name;
             Status = status;
             InsertedOn = insertedOn;
             UpdatedOn = updatedOn;
             InsertedBy = insertedBy;
             UpdatedBy = updatedBy;
+
+            ValidateRootBase();
         }
 
         /// <summary>
