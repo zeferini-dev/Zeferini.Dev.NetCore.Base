@@ -114,10 +114,10 @@ namespace NetCore.Base
 
         public bool ValidateString(string valor, int? minLength, int? maxLength)
         {
-            if ((minLength != null && minLength > 0) &&  (valor.Length < minLength.Value)) return false;
-            if ((maxLength != null && maxLength > 0) &&  (valor.Length > maxLength.Value)) return false;
-
             if (string.IsNullOrEmpty(valor)) return false;
+
+            if ((minLength != null && minLength > 0) &&  (valor.Length < minLength.Value)) return false;
+            if ((maxLength != null && maxLength > 0) &&  (valor.Length > maxLength.Value)) return false;            
 
             if (valor.Length < minLength || valor.Length > maxLength) return false;
 
